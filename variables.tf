@@ -45,6 +45,9 @@ variable "name" {
   default = false
 }
 
+variable "destroy_me" {
+  default = false
+}
 variable "asp_capacity" {
   default = 2
 }

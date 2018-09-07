@@ -9,7 +9,7 @@ locals {
 
 // Shared Resource Group
 resource "azurerm_resource_group" "rg" {
-  name     = "${var.product}-${var.env}"
+  name     = "${var.product}-${var.env_type}-rg"
   location = "${var.location}"
 
   tags {

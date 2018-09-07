@@ -44,7 +44,9 @@ variable "team_contact" {
 variable "name" {
   default = false
 }
-
+variable "env_type" {
+  default = "nonprod"
+}
 variable "destroy_me" {
   default = false
 }

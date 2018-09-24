@@ -32,3 +32,25 @@ variable "tenant_id" {
 variable "jenkins_AAD_objectId" {
   description = "(Required) The Azure AD object ID of a user, service principal or security group in the Azure Active Directory tenant for the vault. The object ID must be unique for the list of access policies."
 }
+
+  variable "team_name" {
+  default = "BAR"
+}
+
+variable "team_contact" {
+  default = "#bar-tech"
+}
+
+variable "name" {
+  default = false
+}
+variable "env_type" {
+  default = "nonprod"
+}
+variable "destroy_me" {
+  default = false
+}
+variable "asp_capacity" {
+  default = 2
+}
+

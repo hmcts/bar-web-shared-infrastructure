@@ -5,6 +5,6 @@ module "appServicePlan" {
   resource_group_name = "${azurerm_resource_group.rg.name}"
   asp_capacity = "${var.asp_capacity}"
   asp_name = "${var.product}-${var.env_type}-asp"
-  ase_name = "${var.product}-${var.env_type}-ase"
+  ase_name = "${local.ase_name}"
   tag_list = "${local.common_tags}"
 }

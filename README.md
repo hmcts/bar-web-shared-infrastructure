@@ -1,2 +1,2 @@
-# bar-web-shared-infrastructure
-Shared infrastructure for bar-web
+# bar-shared-infrastructure
+Shared infrastructure for Manage Payments

@@ -1,6 +1,6 @@
 module "bar-vault" {
   source = "git@github.com:contino/moj-module-key-vault?ref=master"
-  name = "${var.product}-${var.env}"
+  name = "${var.product}-${var.env}-vault"
   product = "${var.product}"
   env = "${var.env}"
   tenant_id = "${var.tenant_id}"

@@ -53,4 +53,4 @@ variable "destroy_me" {
 variable "asp_capacity" {
   default = 2
 }
-
+variable "subscription" {}

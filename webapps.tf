@@ -5,7 +5,7 @@ module "appServicePlanA" {
   env                 = "${var.env}"
   resource_group_name = "${var.product}-${var.env_type}-rg"
   asp_capacity        = "${var.asp_capacity}"
-  asp_name            = "${var.product}"
+  asp_name            = "${var.product}-asp"
   ase_name            = "${local.ase_name}"
   tag_list            = "${local.common_tags}"
 }

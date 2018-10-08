@@ -1,2 +1,2 @@
 # bar-shared-infrastructure
-Shared infrastructure for Manage Payments
+Shared infrastructure for Manage Payments.

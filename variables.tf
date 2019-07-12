@@ -54,3 +54,6 @@ variable "asp_capacity" {
   default = 2
 }
 variable "subscription" {}
+variable "common_tags" {
+  type = "map"
+}

@@ -2,7 +2,7 @@ locals {
   sku_size = "${var.env == "prod" || var.env == "aat" ? "I2" : "I1"}"
 }
 module "appServicePlan" {
-  source = "git@github.com:hmcts/cnp-module-app-service-plan?ref=master"
+  source  = "git@github.com:hmcts/cnp-module-app-service-plan?ref=OUTPUT-TEMPLATE-DEPLOYS-USING-LOOKUP"
   location = "${var.location}"
   env = "${var.env}"
   resource_group_name = "bar-${var.env}-rg"

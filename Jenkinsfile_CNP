@@ -3,11 +3,10 @@
 @Library("Infrastructure") _
 
 import uk.gov.hmcts.contino.Environment
+import uk.gov.hmcts.contino.Subscription
 
 Environment environment = new Environment(env)
+Subscription subscription = new Subscription(env)
 
-onMaster {
-  sharedInfrastructurePipeline('bar', environment.nonProdName, 'nonprod')
-  sharedInfrastructurePipeline('bar', environment.demoName, 'nonprod')
-  sharedInfrastructurePipeline('bar', environment.prodName, 'prod')
-}
+
+withInfraPipeline('bar') {}

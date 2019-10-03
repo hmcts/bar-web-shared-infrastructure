@@ -1,2 +1,2 @@
 env_type = "prod"
-managed_identity_object_id="1694076c-23bd-40c8-9c9b-64985890d82f"
+managed_identity_object_id="9d688ea5-3c3a-4b48-8fbf-4f88e32ed2ab"

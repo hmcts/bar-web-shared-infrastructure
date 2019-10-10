@@ -1,5 +1,5 @@
 module "bar-vault" {
-  source = "git@github.com:contino/moj-module-key-vault?ref=master"
+  source = "git@github.com:hmcts/cnp-module-key-vault?ref=master"
   name = "${var.product}-${var.env}"
   product = "${var.product}"
   env = "${var.env}"
@@ -9,6 +9,7 @@ module "bar-vault" {
   # group id of dcd_reform_dev_azure
   product_group_object_id = "56679aaa-b343-472a-bb46-58bbbfde9c3d"
   common_tags         = "${var.common_tags}"
+  managed_identity_object_id = "${var.managed_identity_object_id}"
 
 }
 

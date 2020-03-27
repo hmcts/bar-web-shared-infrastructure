@@ -7,6 +7,10 @@ locals {
   }
 }
 
+provider "azurerm" {
+  features {}
+}
+
 // Shared Resource Group
 resource "azurerm_resource_group" "rg" {
   name     = "bar-${var.env}-rg"

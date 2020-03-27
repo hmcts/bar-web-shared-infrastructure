@@ -15,7 +15,6 @@ provider "azurerm" {
 resource "azurerm_resource_group" "rg" {
   name     = "bar-${var.env}-rg"
   location = "${var.location}"
-  sku_name = "standard"
 
   tags {
     "Deployment Environment" = "${var.env}"

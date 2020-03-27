@@ -14,5 +14,5 @@ module "bar-vault" {
 }
 
 output "vaultName" {
-  value = "${module.bar-vault.key_vault_name}"
+  sku_name = "${module.bar-vault.key_vault_name}"
 }

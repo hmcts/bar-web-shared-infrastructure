@@ -63,5 +63,6 @@ variable "common_tags" {
 }
 
 variable "sku_name" {
+  type    = "string"
   default = "standard"
 }

@@ -1,6 +1,6 @@
 module "bar-vault" {
   source = "git@github.com:hmcts/cnp-module-key-vault?ref=master"
-  name = "${var.product}-${var.env}"
+  sku_name = "${var.product}-${var.env}"
   product = "${var.product}"
   env = "${var.env}"
   tenant_id = "${var.tenant_id}"

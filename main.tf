@@ -16,6 +16,8 @@ resource "azurerm_resource_group" "rg" {
   name     = "bar-${var.env}-rg"
   location = "${var.location}"
 
+  sku_name "${var.sku}"
+
   tags {
     "Deployment Environment" = "${var.env}"
     "Team Name" = "${var.team_name}"

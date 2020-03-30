@@ -62,6 +62,7 @@ variable "common_tags" {
   type = "map"
 }
 
-variable "sku_name" {
-  default = "standard"
+variable "sku" {
+  default     = "standard"
+  description = "The Name of the SKU used for this Key Vault. Possible values are standard and premium."
 }

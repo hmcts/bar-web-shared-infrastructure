@@ -10,7 +10,6 @@ module "bar-vault" {
   product_group_object_id = "56679aaa-b343-472a-bb46-58bbbfde9c3d"
   common_tags         = "${var.common_tags}"
   managed_identity_object_id = "${var.managed_identity_object_id}"
-  sku_name = "${var.sku_name}"
 }
 
 output "vaultName" {

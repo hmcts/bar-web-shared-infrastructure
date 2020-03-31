@@ -1,3 +1,11 @@
+provider "azurerm" {
+  version = "=1.44.0"
+}
+
+provider "azurerm" {
+  features {}
+}
+
 locals {
   ase_name = "core-compute-${var.env}"
 
@@ -7,9 +15,6 @@ locals {
   }
 }
 
-provider "azurerm" {
-  features {}
-}
 
 // Shared Resource Group
 resource "azurerm_resource_group" "rg" {

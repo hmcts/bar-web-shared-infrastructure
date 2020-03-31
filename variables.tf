@@ -21,8 +21,8 @@ variable "env" {
 
 variable "application_type" {
   type        = "string"
-  default     = "web"
-  description = "Type of Application Insights (Web/Other)"
+  default     = "Web"
+  description = "Type of Application Insights (web/Other)"
 }
 
 variable "managed_identity_object_id" {

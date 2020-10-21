@@ -60,5 +60,4 @@ variable "asp_capacity" {
 variable "subscription" {}
 variable "common_tags" {
   type = map(string)
-
 }

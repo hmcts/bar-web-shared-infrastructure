@@ -9,8 +9,7 @@ module "bar-vault" {
   # group id of dcd_reform_dev_azure
   product_group_object_id = "56679aaa-b343-472a-bb46-58bbbfde9c3d"
   common_tags         = var.common_tags
-  managed_identity_object_ids = var.managed_identity_object_id
-
+  managed_identity_object_ids = ["${var.managed_identity_object_id}"]
 }
 
 output "vaultName" {

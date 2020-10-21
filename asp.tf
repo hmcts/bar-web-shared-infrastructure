@@ -3,8 +3,8 @@ locals {
 }
 /*module "appServicePlan" {
   source = "git@github.com:hmcts/cnp-module-app-service-plan?ref=master"
-  location = var.location
-  env = var.env
+  location = "${var.location}"
+  env = "${var.env}"
   resource_group_name = "bar-${var.env}-rg"
   asp_capacity = var.asp_capacity
   asp_sku_size = local.sku_size

@@ -7,7 +7,7 @@ terraform {
 data "terraform_remote_state" "core_apps_infrastructure" {
   backend = "azurerm"
 
-  config {
+  config = {
     resource_group_name  = join("-",["mgmt-state-store",var.subscription])
     storage_account_name = "mgmtstatestore${var.subscription}"
     container_name       = "mgmtstatestorecontainer${var.env}"

@@ -1,26 +1,26 @@
 variable "product" {
-  type = "string"
+  type = string
   default = "bar-web"
 }
 
 variable "location" {
-  type    = "string"
+  type    = string
   default = "UK South"
 }
 
 // as of now, UK South is unavailable for Application Insights
 variable "appinsights_location" {
-  type        = "string"
+  type        = string
   default     = "West Europe"
   description = "Location for Application Insights"
 }
 
 variable "env" {
-  type = "string"
+  type = string
 }
 
 variable "application_type" {
-  type        = "string"
+  type        = string
   default     = "web"
   description = "Type of Application Insights (Web/Other)"
 }
@@ -59,5 +59,5 @@ variable "asp_capacity" {
 }
 variable "subscription" {}
 variable "common_tags" {
-  type = "map"
+  type = map(string)
 }
